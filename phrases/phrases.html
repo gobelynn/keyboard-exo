@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=".././style.css">
+    <link rel="stylesheet" href="./phrases.css">
+    <title>Exercices des phrases</title>
+  </head>
+
+  <body>
+    <h1>Exercices clavier</h1>
+    <h2>Réécrire des phrases</h2>
+    
+    <nav>
+        <ul>
+            <li><a href=".././index.html">Accueil</a></li>
+            <li><a href="../mots/mots.html">Réécrire des mots</a></li>
+            <li><a href="#">Réécrire des paragraphes</a></li>
+            <li><a href="#">Réécrire des chaînes de caractères</a></li>
+        </ul>
+    </nav>
+
+    <form id="form" action="">
+      <p><span class="underline">Phrase à réécrire</span> :</p>
+      
+      <p><span class="heavy" id="phraseSelectionne">Phrase selectionnée</span></p>
+
+      <textarea id="phraseEntre" autocomplete="off" type="text" placeholder="écris la phrase à recopier ici" autofocus></textarea>
+
+      <p id="msgErreur"></p>
+    </form>
+
+    <script src="./phrases.js"></script>
+  </body>
+</html>

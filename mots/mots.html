@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=".././style.css">
+    <link rel="stylesheet" href="./mots.css">
+    <title>Exercices des mots</title>
+  </head>
+
+  <body>
+    <h1>Exercices clavier</h1>
+    <h2>Réécrire des mots</h2>
+    
+    <nav>
+        <ul>
+            <li><a href=".././index.html">Accueil</a></li>
+            <li><a href="../phrases/phrases.html">Réécrire des phrases</a></li>
+            <li><a href="#">Réécrire des paragraphes</a></li>
+            <li><a href="#">Réécrire des chaînes de caractères</a></li>
+        </ul>
+    </nav>
+
+    <form id="form" action="">
+      <p><span class="underline">Mot à réécrire</span> : <span class="heavy" id="motSelectionne">Mot selectionné</span></p>
+
+      <input id="motEntre" autocomplete="off" type="text" autofocus></input>
+      
+      <p id="msgErreur"></p>
+    </form>
+
+    <script src="./mots.js"></script>
+  </body>
+</html>
