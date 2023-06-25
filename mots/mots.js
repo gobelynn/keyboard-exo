@@ -43,8 +43,10 @@ form.addEventListener('submit', function(e) {
 form.addEventListener('keyup', function(e) {
   if (motSelectionne.value === motEntre.value) {
     msgErreur.innerHTML = 'Correct'
+    document.getElementById("msgErreur").style.color = "lightgreen"
   } else {
     msgErreur.innerHTML = 'Incorrect'
+    document.getElementById("msgErreur").style.color = "red"
   }
 
   if (e.code !== 'Enter') {
