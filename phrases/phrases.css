@@ -1,4 +1,13 @@
+.phrase-selectionne {
+    margin: 1rem 0 2rem 0;
+    font-size: 2rem;
+}
+
 textarea {
-    width: 80%;
-    height: 10vh;
+    width: 100%;
+    height: 25rem;
+    background-color: rgb(49, 47, 53);
+    color: #c0c0c0;
+    padding: .5rem;
+    font-size: 2rem;
 }
