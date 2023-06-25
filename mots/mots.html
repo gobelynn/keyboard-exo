@@ -10,26 +10,29 @@
   </head>
 
   <body>
-    <h1>Exercices clavier</h1>
+    <h1>Exercices au clavier</h1>
     <h2>Réécrire des mots</h2>
     
     <nav>
         <ul>
             <li><a href="https://gobelynn.github.io/keyboard-exo/">Accueil</a></li>
             <li><a href="https://gobelynn.github.io/keyboard-exo/phrases/phrases.html">Réécrire des phrases</a></li>
-            <li><a href="#">Réécrire des paragraphes</a></li>
-            <li><a href="#">Réécrire des chaînes de caractères</a></li>
         </ul>
     </nav>
 
     <form id="form" action="">
-      <p><span class="underline">Mot à réécrire</span> : <span class="heavy" id="motSelectionne">Mot selectionné</span></p>
+      <p><span class="underline">Mot à réécrire</span> :</p>
+      <p class="mot-selectionne"><span class="heavy" id="motSelectionne">Mot selectionné</span></p>
 
-      <input id="motEntre" autocomplete="off" type="text" autofocus></input>
+      <input class="heavy" id="motEntre" autocomplete="off" type="text" autofocus></input>
       
       <p id="msgErreur"></p>
     </form>
 
+    <footer>
+      <p class="heavy">Christelle Borrego</p>
+      <p>Conseillère Numérique France Services</p>
+    </footer>
     <script src="./mots.js"></script>
   </body>
 </html>
