@@ -10,28 +10,35 @@
   </head>
 
   <body>
-    <h1>Exercices clavier</h1>
+    <h1>Exercices au clavier</h1>
     <h2>Réécrire des phrases</h2>
     
     <nav>
         <ul>
-            <li><a href="https://gobelynn.github.io/keyboard-exo/">Accueil</a></li>
-            <li><a href="https://gobelynn.github.io/keyboard-exo/mots/mots.html">Réécrire des mots</a></li>
-            <li><a href="#">Réécrire des paragraphes</a></li>
-            <li><a href="#">Réécrire des chaînes de caractères</a></li>
+            <li><a href=".././index.html">Accueil</a></li>
+            <li><a href="../mots/mots.html">Réécrire des mots</a></li>
         </ul>
     </nav>
+    
+    <section class="soluce dark-grey">
+      <p>Vous avez du mal à écrire une phrase ?</p>
+      <p>Appuyez sur la touche <span class="heavy">[F5]</span> de votre clavier pour rafraîchir la page.</p>
+      <p class="heavy">Cela affichera une nouvelle phrase !</p>
+    </section>
 
     <form id="form" action="">
       <p><span class="underline">Phrase à réécrire</span> :</p>
-      
-      <p><span class="heavy" id="phraseSelectionne">Phrase selectionnée</span></p>
+      <p class="phrase-selectionne"><span class="heavy" id="phraseSelectionne">Phrase selectionnée</span></p>
 
-      <textarea id="phraseEntre" autocomplete="off" type="text" placeholder="écris la phrase à recopier ici" autofocus></textarea>
+      <textarea class="heavy" id="phraseEntre" autocomplete="off" type="text" autofocus></textarea>
 
       <p id="msgErreur"></p>
     </form>
 
+    <footer>
+      <p class="heavy">Christelle Borrego</p>
+      <p>Conseiller Numérique France Services</p>
+    </footer>
     <script src="./phrases.js"></script>
   </body>
 </html>
