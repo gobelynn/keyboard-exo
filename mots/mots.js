@@ -9,8 +9,8 @@ let motEntre = document.getElementById('motEntre')
 let msgErreur = document.getElementById('msgErreur');
 let form = document.getElementById('form')
 
-const liste_mots = [
-  "Aristocratie","Barbapapa","Cristalisant","Dromadaire","Eglantier","Fabuleuse","Gargantuesque","Hirondelle","Instabilité","Jardinière","Kayak","Laitage","Mandragore","Nidifuge","Opérationnelle","Pistache","Quintescence","Rarification","Solfège","Tarentule","Ubuesque","Vélodrome","Wagonnet","Xylophone","Yiddish","Anticonstitutionnellement","Chiropracteur","Contraventionnalisation","Intergouvernementalisation","Interdépartementalisation","Périchor","Mélopée","Syrinx","Alcyonien","Rubéfier","Téraroïde","Hypotypose","Equanimité","Ophiolâtrie","Iatrogène","Chantâme","Traître","Jeûne","Aïeul","Coïncidence","Paranoïa","Laïque","Faïence","Aussitôt","Cèpe","Mèches","Excès","Barème","Lésènes","Voilà","Déjà","Là-bas","Jusqu'à","Là-dessous","Tête-à-tête","Bric-à-brac","Tête-à-queue","Tout-à-l'égout","Baïonette","Héroïne","Circonflexe","Gymnastique","Aboyaient","Acronymes","Analyseront","Ankylosaure","Zygomatiques","Intervieweront","Sandwicheries","Taekwondo","Wallaby","Aggramaticaux","Abdominaux","Xylophages","Juxstaposition","Tableautin","Tachycardie","Tâcherons","Taï-chi-chuan","Taille-crayon","Téléstéens","Tenthrèdes","Toboggan","Tyrannosaure","Typographiquement","Tyrosémiophilie","Tzatsiki","Destockage","Folklorique","Kérosène","Subkilotonniques","Psychokinétiques","Choucroute","Rouspéter","Esperluette",
+const LISTE_MOTS = [
+  "Aristocratie","Barbapapa","Cristallisant","Dromadaire","Eglantier","Fabuleuse","Gargantuesque","Hirondelle","Instabilité","Jardinière","Kayak","Laitage","Mandragore","Nidifuge","Opérationnelle","Pistache","Quintessence","Ratification","Solfège","Tarentule","Ubuesque","Vélodrome","Wagonnet","Xylophone","Yiddish","Anticonstitutionnellement","Chiropracteur","Contraventionnalisation","Intergouvernementalisation","Interdépartementalisation","Périphore","Mélopée","Syrinx","Alcyonien","Rubéfier","Téraroïde","Hypotypose","Equanimité","Ophiolâtrie","Iatrogène","Chantâmes","Traître","Jeûne","Aïeul","Coïncidence","Paranoïa","Laïque","Faïence","Aussitôt","Cèpe","Mèches","Excès","Barème","Lésènes","Voilà","Déjà","Là-bas","Jusqu'à","Là-dessous","Tête-à-tête","Bric-à-brac","Tête-à-queue","Tout-à-l'égout","Baïonette","Héroïne","Circonflexe","Gymnastique","Aboyaient","Acronymes","Analyseront","Ankylosaure","Zygomatiques","Intervieweront","Sandwicheries","Taekwondo","Wallaby","Agrammaticaux","Abdominaux","Xylophages","Juxtaposition","Tableautin","Tachycardie","Tâcherons","Taï-chi-chuan","Taille-crayon","Téléostéens","Tenthrèdes","Toboggan","Tyrannosaure","Typographiquement","Tyrosémiophilie","Tzatsiki","Déstockage","Folklorique","Kérosène","Subkilotonniques","Psychokinétiques","Choucroute","Rouspéter","Esperluette",
 ]
 
 //////////////////////////////////////////////
@@ -20,9 +20,9 @@ const liste_mots = [
 // Déclaration disant que la valeur du mot sélectionné aléatoirement est égale au mot sélectionné aléatoirement dans la liste de mots prédéfinies
 //
 //////////////////////////////
-let motRandom = Math.floor(Math.random() * (liste_mots.length))
-motSelectionne.innerHTML = liste_mots[motRandom]
-motSelectionne.value = liste_mots[motRandom]
+let motRandom = Math.floor(Math.random() * (LISTE_MOTS.length))
+motSelectionne.innerHTML = LISTE_MOTS[motRandom]
+motSelectionne.value = LISTE_MOTS[motRandom]
 
 
 //////////////////////////////////////////////
@@ -41,10 +41,16 @@ form.addEventListener('submit', function(e) {
 //
 //////////////////////////////
 form.addEventListener('keyup', function(e) {
+  if (motSelectionne.value === motEntre.value) {
+    msgErreur.innerHTML = 'Correct'
+  } else {
+    msgErreur.innerHTML = 'Incorrect'
+  }
+
   if (e.code !== 'Enter') {
     return
   }
-
+  
   checkWord()
 })
 
@@ -56,11 +62,7 @@ form.addEventListener('keyup', function(e) {
 //////////////////////////////
 function checkWord() {
   if (motSelectionne.value === motEntre.value) {
-    msgErreur.innerHTML = 'Correct'
-
     form.submit()
-  } else {
-    msgErreur.innerHTML = 'Incorrect'
   }
 }
 
