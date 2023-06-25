@@ -69,8 +69,10 @@ form.addEventListener('keypress', function(e) {
 form.addEventListener('keyup', function(e) {
   if (phraseSelectionne.value === phraseEntre.value) {
     msgErreur.innerHTML = 'Correct'
+    document.getElementById("msgErreur").style.color = "lightgreen"
   } else {
     msgErreur.innerHTML = 'Incorrect'
+    document.getElementById("msgErreur").style.color = "red"
   }
 
   if (e.code !== 'Enter') {
