@@ -9,7 +9,23 @@ let phraseSelectionne = document.getElementById('phraseSelectionne')
 let msgErreur = document.getElementById('msgErreur')
 
 const LISTE_PHRASES = [
-  "Le soleil vient de se lever.","Les chaussettes de l'archiduchesse sont-elles sèchent, archisèchent ?","Le slogan du magasin Gifi est : Gifi les idées de génie !","Dans la barre de menus Visual Studio, choississez Outils > Options.","Grâce au clavier que vous utilisez pour écrire cette phrase, vous pouvez écrire un dollar comme ceci : $, ainsi qu'une livre (monnaie anglaise) comme ceci : £.","Comment exprimer que je suis content avec un émoji très simple ? J'écris ceci : \"^^\".","\"càc\" est l'abréviation du terme corps-à-corps.","Mais, que vois-je ?; une loutre.","Vous pouvez me contacter à cette adresse e-mail : prenom.nom@gmail.com !","Comment dessiner un dollar avec un clavier ? Comme ceci : [ $ ]","J'écris un mot entre crochet : [pomme].","J'écris un mot entre accolades {ordinateur}.","J'écris un mot entre parenthèses : (aéroport).","Oui, l'entièreté de ces phrases ont été écrites à la main, une par une, par quelqu'un qui vous a créé cet exercice afin de vous aider à prendre en main un clavier d'ordinateur; Et tout cela avec beaucoup d'amour !","Le but de cet exercice n'est pas forcément d'écrire sans faute, mais d'apprendre à utiliser un clavier d'ordinateur; Mais surtout, de reconnaître ses erreurs. Cela peut paraître difficile, mais vous vous en sortez merveilleusement bien !","Pour écrire le caractère @, j'appuie sur les touches [ALT GR] + [à].","Plus vous aller persévérer, plus ce sera facile. C'est le principe d'une zone de confort. Quand on a peur de l'inconnu, il faut oser sortir, rencontrer des gens différents. Cela vous permettra de vous sentir plus à l'aise avec le temps."
+  "Le soleil vient de se lever.",
+  "Les chaussettes de l'Archiduchesse sont-elles sèches ? Archisèches !",
+  "Le slogan du magasin Gifi est : Des idées de génie !",
+  "Dans la barre de menus Visual Studio, choisissez Outils > Options.",
+  "Grâce au clavier que vous utilisez pour écrire cette phrase, vous pouvez écrire un dollar (monnaie américaine) comme ceci : $, ainsi qu'une livre (monnaie anglaise) comme ceci : £.",
+  "Comment exprimer que je suis content avec un émoji très simple ? J'écris ceci : \"^^\".",
+  "\"càc\" est l'abréviation du terme corps-à-corps.",
+  "Mais, que vois-je ? ; une loutre.",
+  "Vous pouvez me contacter à cette adresse e-mail : prenom.nom@gmail.com !",
+  "Comment dessiner un dollar avec un clavier ? Comme ceci : [_$_]",
+  "J'écris un mot entre crochets : [pomme].",
+  "J'écris un mot entre accolades : {ordinateur}.",
+  "J'écris un mot entre parenthèses : (aéroport).",
+  "Oui, l'entièreté de ces phrases ont été écrites à la main, une par une, par quelqu'un qui vous a créé cet exercice afin de vous aider à prendre en main un clavier d'ordinateur ; et tout cela avec beaucoup d'amour !",
+  "Le but de cet exercice n'est pas forcément d'écrire sans faute, mais d'apprendre à utiliser un clavier d'ordinateur ; mais surtout, de reconnaître ses erreurs. Cela peut paraître difficile, mais vous vous en sortez merveilleusement bien !",
+  "Avec les touches [ALT GR] + [à] je peux écrire le caractère spécial arobase : @.",
+  "Plus vous allez persévérer, plus ce sera facile. C'est le principe d'une zone de confort. Quand on a peur de l'inconnu, il faut oser sortir, rencontrer des gens différents. Cela vous permettra de vous sentir plus à l'aise avec le temps."
 ]
 
 
@@ -38,7 +54,7 @@ form.addEventListener('submit', function(e) {
 
 //////////////////////////////////////////////
 //
-// Lire un event du formulaire qui bloque le saut de ligne du textarea quand la touche ENTER est pressée
+// v - Lire un event du formulaire qui bloque le saut de ligne du textarea quand la touche ENTER est pressée
 //
 //////////////////////////////
 form.addEventListener('keypress', function(e) {
@@ -50,7 +66,7 @@ form.addEventListener('keypress', function(e) {
 
 //////////////////////////////////////////////
 //
-// Lecture d'un événement du formulaire à chaque touche du clavier levée (keyup), en précisant que si la touche levée n'est pas 'Enter', ne rien faire. Ensuite, utiliser la fonction de vérification de concordance des phrases entrées par l'utilisateur et selectionnées aléatoirement dans la liste de phrases prédéfinies
+// v - Lecture d'un événement du formulaire à chaque touche du clavier levée (keyup), en précisant que si la touche levée n'est pas 'Enter', ne rien faire. Ensuite, utiliser la fonction de vérification de concordance des phrases entrées par l'utilisateur et selectionnées aléatoirement dans la liste de phrases prédéfinies
 //
 //////////////////////////////
 form.addEventListener('keyup', function(e) {
@@ -64,7 +80,7 @@ form.addEventListener('keyup', function(e) {
 
 //////////////////////////////////////////////
 //
-// Fonction de vérification de concordance des phrases entrées par l'utilisateur et des phrases sélectionnées aléatoirement dans une liste de phrases prédéfinies
+// v - Fonction de vérification de concordance des phrases entrées par l'utilisateur et des phrases sélectionnées aléatoirement dans une liste de phrases prédéfinies
 //
 //////////////////////////////
 function concordancePhrase() {
@@ -80,7 +96,7 @@ function concordancePhrase() {
 
 //////////////////////////////////////////////
 //
-// Focus l'input lorsque la page se recharge, permet d'éviter à l'apprenant(e) de devoir cliquer avec la souris
+// v - Focus l'input lorsque la page se recharge, permet d'éviter à l'apprenant(e) de devoir cliquer avec la souris
 //
 //////////////////////////////
 document.getElementById("phraseEntre").addEventListener("click", () => {
