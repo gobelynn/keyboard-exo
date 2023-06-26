@@ -28,7 +28,9 @@ const LISTE_PHRASES = [
   "La Namibie compte 76 conservatoires communautaires sur une superficie de 155.000 km2.",
   "Comment dessiner un dollar avec un clavier ? Comme ceci : [_$_].",
   "Le bortsch est une soupe traditionnelle Ukrainienne servie en entrée.",
-  "J'écris un mot entre crochet : [pomme].","J'écris un mot entre accolades : {ordinateur}.","J'écris un mot entre parenthèses : (aéroport).",
+  "J'écris un mot entre crochet : [pomme].",
+  "J'écris un mot entre accolades : {ordinateur}.",
+  "J'écris un mot entre parenthèses : (aéroport).",
   "Avec les touches [ALT GR] + [à] je peux écrire le caractère spécial arobase : @.",
   "Défaire, refaire, c'est aussi faire."
 ]
