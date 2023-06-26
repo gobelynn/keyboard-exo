@@ -10,34 +10,38 @@
   </head>
 
   <body>
-    <h1>Exercices au clavier</h1>
-    <h2>Réécrire des phrases</h2>
-    
-    <nav>
-        <ul>
-            <li><a href=".././index.html">Accueil</a></li>
-            <li><a href="../mots/mots.html">Réécrire des mots</a></li>
-        </ul>
-    </nav>
-    
-    <section class="soluce dark-grey">
+    <section class="soluce grey">
       <p>Vous avez du mal à écrire une phrase ?</p>
       <p>Appuyez sur la touche <span class="heavy">[F5]</span> de votre clavier pour rafraîchir la page.</p>
       <p class="heavy">Cela affichera une nouvelle phrase !</p>
     </section>
 
-    <form id="form" action="">
-      <p><span class="underline">Phrase à réécrire</span> :</p>
-      <p class="phrase-selectionne"><span class="heavy" id="phraseSelectionne">Phrase selectionnée</span></p>
-      <p id="msgErreur"></p>
+    <section class="app">
+      <h1>Exercices au clavier</h1>
+      <h2>Réécrire des phrases</h2>
+      
+      <nav>
+        <ul>
+          <li><a href=".././index.html">Accueil</a></li>
+          <li><a href="../mots/mots.html">Réécrire des mots</a></li>
+        </ul>
+      </nav>
+    
+      <form id="form" action="">
+        <p><span class="underline">Phrase à réécrire</span> :</p>
+        <p class="phrase-selectionne"><span class="heavy" id="phraseSelectionne">Phrase selectionnée</span></p>
+        <p id="msgErreur"></p>
+    
+        <textarea class="heavy" id="phraseEntre" autocomplete="off" type="text" autofocus></textarea>
+    
+      </form>
+    
+      <footer>
+        <p class="heavy">Christelle Borrego</p>
+        <p>Conseillère Numérique France Services</p>
+      </footer>
+    </section>
 
-      <textarea class="heavy" id="phraseEntre" autocomplete="off" type="text" autofocus></textarea>
-    </form>
-
-    <footer>
-      <p class="heavy">Christelle Borrego</p>
-      <p>Conseillère Numérique France Services</p>
-    </footer>
     <script src="./phrases.js"></script>
   </body>
 </html>
