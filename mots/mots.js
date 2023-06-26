@@ -136,16 +136,26 @@ form.addEventListener('submit', function(e) {
 
 //////////////////////////////////////////////
 //
+// Lire un event du formulaire qui bloque le saut de ligne du textarea quand la touche ENTER est pressée
+//
+//////////////////////////////
+form.addEventListener('keypress', function(e) {
+  if (e.code == 'Enter') {
+    return e.preventDefault()
+  }
+})
+
+
+//////////////////////////////////////////////
+//
 // Lecture d'un événement du formulaire à chaque touche du clavier levée, utilisant la fonction de vérification de concordance des mots entrés et selectionnés
 //
 //////////////////////////////
 form.addEventListener('keyup', function(e) {
   if (motSelectionne.value === motEntre.value) {
-    msgErreur.innerHTML = 'Correct'
-    document.getElementById("msgErreur").style.color = "lightgreen"
+    document.getElementById("motSelectionne").style.color = "green"
   } else {
-    msgErreur.innerHTML = 'Incorrect'
-    document.getElementById("msgErreur").style.color = "red"
+    document.getElementById("motSelectionne").style.color = "red"
   }
 
   if (e.code !== 'Enter') {
