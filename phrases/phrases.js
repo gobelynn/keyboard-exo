@@ -13,16 +13,24 @@ const LISTE_PHRASES = [
   "Les chaussettes de l'archiduchesse sont-elles sèchent, archi sèchent ?",
   "Le slogan du magasin Gifi est : Gifi les idées de génie !",
   "Dans la barre de menus Visual Studio, choisissez Outils > Options.",
-  "Grâce au clavier que vous utilisez pour écrire cette phrase, vous pouvez écrire un dollar (monnaie américaine) comme ceci : $, ainsi qu'une livre (monnaie anglaise) comme ceci : £.",
   "Comment exprimer que je suis content avec un émoji très simple ? J'écris ceci : \"^^\".",
   "\"càc\" est l'abréviation du terme corps-à-corps.",
   "Mais, que vois-je ? ; une loutre.",
-  "Vous pouvez me contacter à cette adresse e-mail : prenom.nom@gmail.com !","Comment dessiner un dollar avec un clavier ? Comme ceci : [_$_]",
+  "Super, j'arrive à écrire au clavier maintenant !",
+  "Quand il me prend dans ses bras, qu'il me parle tout bas, je vois la vie en rose.",
+  "C'est agréable de voir de nouvelles personnes !",
+  "Le tableau de la Joconde a été peint par Léonard de Vinci.",
+  "La variété de coutumes, langues et traditions des 250 ethnies composant le Nigeria lui confère une très riche diversité.",
+  "Il était une fois, quelqu'un qui apprenait à écrire au clavier.",
+  "Le point le plus haut de l'Afghanistan est à 7.485m au-dessus de la mer, son nom est le Nowshak.",
+  "Plusieurs sites sud-coréens sont inscrits au Patrimoine mondial de l’UNESCO. Ils sont au nombre de quatorze en 2021.",
+  "Vous pouvez me contacter à cette adresse e-mail : prenom.nom@gmail.com !",
+  "La Namibie compte 76 conservatoires communautaires sur une superficie de 155.000 km2.",
+  "Comment dessiner un dollar avec un clavier ? Comme ceci : [_$_].",
+  "Le bortsch est une soupe traditionnelle Ukrainienne servie en entrée.",
   "J'écris un mot entre crochet : [pomme].","J'écris un mot entre accolades : {ordinateur}.","J'écris un mot entre parenthèses : (aéroport).",
-  "Oui, l'entièreté de ces phrases ont été écrites à la main, une par une, par quelqu'un qui vous a créé cet exercice afin de vous aider à prendre en main un clavier d'ordinateur ; Et tout cela avec beaucoup d'amour !",
-  "Le but de cet exercice n'est pas forcément d'écrire sans faute, mais d'apprendre à utiliser un clavier d'ordinateur ; Mais surtout, de reconnaître ses erreurs. Cela peut paraître difficile, mais vous vous en sortez merveilleusement bien !",
   "Avec les touches [ALT GR] + [à] je peux écrire le caractère spécial arobase : @.",
-  "Plus vous aller persévérer, plus ce sera facile. C'est le principe d'une zone de confort. Quand on a peur de l'inconnu, il faut oser sortir, rencontrer des gens différents. Cela vous permettra de vous sentir plus à l'aise avec le temps."
+  "Défaire, refaire, c'est aussi faire."
 ]
 
 
@@ -68,11 +76,9 @@ form.addEventListener('keypress', function(e) {
 //////////////////////////////
 form.addEventListener('keyup', function(e) {
   if (phraseSelectionne.value === phraseEntre.value) {
-    msgErreur.innerHTML = 'Correct'
-    document.getElementById("msgErreur").style.color = "lightgreen"
+    document.getElementById("phraseSelectionne").style.color = "green"
   } else {
-    msgErreur.innerHTML = 'Incorrect'
-    document.getElementById("msgErreur").style.color = "red"
+    document.getElementById("phraseSelectionne").style.color = "red"
   }
 
   if (e.code !== 'Enter') {
@@ -103,3 +109,11 @@ function checkSentence() {
 document.getElementById("phraseEntre").addEventListener("click", () => {
   document.getElementById("phraseEntre").focus()
 })
+
+
+//////////////////////////////////////////////
+//
+// Si correct     = vert
+// Si incorrect   = rouge
+//
+//////////////////////////////
