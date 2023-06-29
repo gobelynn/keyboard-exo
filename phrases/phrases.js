@@ -35,7 +35,7 @@ const LISTE_PHRASES = [
   "Le taureau rouge présent dans la ville de Nancy a été réalité par l'artiste Gé Pellini.",
   "Quelques maisons à l'architecture \"Art Nouveau\" sont présentent en périphérie du Parc de Saurupt.",
   "En randonnée ou à vélo, il existe une promenade où vous pouvez découvrir 7 châteaux à Villers-lès-Nancy.",
-  "Bonjour Christelle, prendriez-vous un peu thé en cette matinée ?",
+  "Bonjour Christelle, prendriez-vous un peu de thé en cette matinée ?",
   "En 1852, la ligne de Paris à Strasbourg met Nancy à 8 heures de la capitale, contre 30 à 40 heures de diligence.",
   "La ville de Nancy est jumelée avec 12 villes d'autres pays, dont la ville de Liège, en Belgique.",
   "3 places du XVIIIè siècle sont classées au patrimoine mondial de l'UNESCO depuis 1983. Les places Stanislas, de la Carrière et d'Alliance.",
