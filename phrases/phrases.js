@@ -32,6 +32,15 @@ const LISTE_PHRASES = [
   "J'écris un mot entre accolades : {ordinateur}.",
   "J'écris un mot entre parenthèses : (aéroport).",
   "Avec les touches [ALT GR] + [à] je peux écrire le caractère spécial arobase : @.",
+  "Le taureau rouge présent dans la ville de Nancy a été réalité par l'artiste Gé Pellini.",
+  "Quelques maisons à l'architecture \"Art Nouveau\" sont présentent en périphérie du Parc de Saurupt.",
+  "En randonnée ou à vélo, il existe une promenade où vous pouvez découvrir 7 châteaux à Villers-lès-Nancy.",
+  "Bonjour Christelle, prendiez-vous un peu thé en cette matinée ?",
+  "En 1852, la ligne de Paris à Strasbourg met Nancy à 8 heures de la capitale, contre 30 à 40 heures de diligence.",
+  "La ville de Nancy est jumelée avec 12 villes d'autres pays, dont la ville de Liège, en Belgique.",
+  "3 places du XVIIIè siècle sont classées au patrimoine mondial de l'UNESCO depuis 1983. Les places Stanislas, de la Carrière et d'Alliance.",
+  "Labellisé \"Jardin remarquable\", le Jardin botanique Jean-Marie Pelt situé à Villers-lès-Nancy vous invite à voyager avec ses 12.000 espèces de plantes et 2.500 m2 de serres tropicales.",
+  "Plus de 30 oeuvres de Street Art sont disséminées dans la ville de Nancy. Vous pouvez y trouver \"Giulia\" aux couleurs acidulées, un morse parachutiste, des disques lumineux, et bien d'autres oeuvres.",
   "Défaire, refaire, c'est aussi faire."
 ]
 
