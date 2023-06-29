@@ -142,6 +142,10 @@ form.addEventListener('submit', function(e) {
 form.addEventListener('keypress', function(e) {
   if (e.code == 'Enter') {
     return e.preventDefault()
+  } else if (e.code == 'NumpadEnter') {
+    return e.preventDefault()
+  } else if (e.code == 'ShiftRight') {
+    return e.preventDefault()
   }
 })
 
