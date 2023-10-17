@@ -126,3 +126,12 @@ footer {
 .dark-grey {
     color:              #17181a;
 }
+
+.new-button {
+    padding:            .6rem .3rem .6rem .3rem;
+    text-align:         center;
+    background-color:   #3f1788;
+    color:              #c0c0c0;
+    font-weight:        900;
+    border-radius:      100%;
+}
